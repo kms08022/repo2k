@@ -1,0 +1,181 @@
+		body {
+			font-family:Verdana, Geneva, sans-serif;
+			background-color: #000000;
+		}	
+		
+        a {
+			text-decoration: none;
+			color: #ffffff;
+		}
+        a:hover {
+			color: yellow;
+			text-decoration: underline;
+		}		
+        a:visited {
+			color: #ffffff;
+		}		
+		
+		#container {
+			margin: 0 auto;
+			width: 800px;
+			height: 600px;
+			background-image: url("bg.png");
+			background-position: center;
+			background-repeat: no-repeat;
+			color: #ffffff;			
+			border: 2px solid red;
+		}
+		
+		#audioBox {
+			display: none;
+		}
+		
+		#header {
+			position: relative;
+			top: 20px;
+			left: 200px;
+			width:400px;
+			height: 60px;	
+			background-color: #ffffff;
+			border: 1px solid red;
+			opacity: 0.6;
+			filter: alpha(opacity=60); /* For IE8 and earlier */
+		}
+
+        #header h2 {
+			margin-top: 4px;
+			text-align: center;
+			font-weight: bold;
+			color: red;
+		}	
+		
+		#header p {
+			margin-top: -20px;
+			font-size: 0.6em;
+			font-weight: bold;
+			text-align: center;
+			color: #000000;
+		}
+		
+		#playerName {
+			padding: 30px 270px;
+		}
+		
+		#playerName p {
+			text-align: center;
+			display: inline;
+		}		
+		
+		#gameMmenu {
+		    float: left;
+	        padding: 0;
+			margin: 0;
+		}	
+		
+		#gameMenu ul {
+			padding-left: 125px;
+			list-style: none;
+			font-weight: bold;	
+		}
+		
+		#gameMenu li {
+			float: left;
+			padding-left: 20px;			
+			padding-right: 20px;
+		}		
+
+		#gameTime {
+			margin-left: 50px;
+			padding: 5px 10px; 
+			float: left;
+			color: red;			
+			font-size: 0.8em;
+			font-weight: bold;	
+			text-align: center;
+			width: 110px;
+			background-color: #ffffff;
+			border: 2px solid red;
+			border-radius: 3px;			
+			opacity: 0.6;
+			filter: alpha(opacity=60); /* For IE8 and earlier */			
+		}
+		
+		#bestTime {
+			float: left;
+			padding: 20px 100px;
+			color: #000000;
+			font-weight: bold;
+			font-size: 0.9em;	
+		}
+		
+		#gameHits{
+			margin-right: 50px;
+			padding: 5px 10px; 			
+			float: right;
+			color: red;
+			font-size: 0.8em;
+			font-weight: bold;	
+			text-align: center;			
+			width: 110px;
+			background-color: #ffffff;
+			border: 2px solid red;
+			border-radius: 3px;			
+			opacity: 0.6;
+			filter: alpha(opacity=60); /* For IE8 and earlier */			
+		}	
+
+		#gameObject {
+			position: relative;
+			top: 200px;
+			left: 150px;
+			width: 80px;
+			height: 80px;
+			background-image: url("image1.png");			
+			display: none;
+		}	
+		
+		#menuInstructions {
+			position: absolute;
+			margin-top: 385px;
+			margin-left: 150px;		
+			width: 150px;
+			height: 30px;		
+			background-color: red;
+			border: 2px solid yellow;
+			border-radius: 3px;			
+			opacity: 0.6;
+			filter: alpha(opacity=60); /* For IE8 and earlier */	
+			font-size: 0.8em;
+			font-weight: bold;
+			text-align: center;
+			padding-bottom: 10px;			
+		}
+		
+		#menuExit {
+			position: absolute;
+			margin-top: 385px;
+			margin-left: 500px;		
+			width: 150px;
+			height: 30px;		
+			background-color: red;
+			border: 2px solid yellow;
+			border-radius: 3px;			
+			opacity: 0.6;
+			filter: alpha(opacity=60); /* For IE8 and earlier */	
+			font-size: 0.8em;
+			font-weight: bold;
+			text-align: center;
+			padding-bottom: 10px;			
+		}		
+
+		#instructions {
+			position: absolute;
+			margin-top: 0;
+			margin-left: 200px;
+			width: 400px;
+			height: 120px; 
+			padding: 10px;
+			background-color: #000000;
+			border: 1px solid #ffffff;
+			border-radius: 5px;	
+		}

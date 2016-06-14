@@ -1,0 +1,491 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0057)https://webmanager.repzio.com/items/showcollection/283123 -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="ctl00_Head1"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="./bru_files/5119ec1a6e"></script><script src="./bru_files/nr-686.min.js"></script><script async="" src="./bru_files/analytics.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"5119ec1a6e","applicationID":"5346039","transactionName":"ZVUGMRNXCEtUU0dRClwfIAoVeANMdl9dTBddXAgAExkvTFBdQBcWWl8TBg5aCl1WRFpXCw==","queueTime":0,"applicationTime":137,"ttGuid":"EE2F18A7088F13AF","agent":"js-agent.newrelic.com/nr-686.min.js"}</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"XAUFUFdADQAEUlFRDg=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),u=c.length,f=i(a,o,r),d=0;u>d;d++)c[d].apply(f,n);return f}function a(t,e){u[t]=s(t).concat(e)}function s(t){return u[t]||[]}function c(){return n(e)}var u={};return{on:a,emit:e,create:c,listeners:s,_events:u}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:20,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(u){try{r("ierr",[u,(new Date).getTime(),!0])}catch(f){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(3),window.onerror=e;try{throw new Error}catch(u){"stack"in u&&(t(4),t(5),"addEventListener"in window&&t(1),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(2),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:5,2:8,3:3,4:7,5:6,6:21,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:22,ee:"QJf3ax",gos:"7eSDFh"}],6:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:22,ee:"QJf3ax"}],7:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=t("ee").create(),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:22,ee:"QJf3ax"}],8:[function(t,e){function n(){u.inPlace(this,p,"fn-")}function r(t,e){u.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),u=c(a),f=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),f.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,u.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:5,2:22,ee:"QJf3ax"}],9:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,u="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,f=n(u);if(f&&(r.rxSize=f),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,u=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var u=n(o);u&&(r.txSize=u)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var f=0;c>f;f++)e.addEventListener(s[f],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+u(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+u(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:10,3:8,4:5,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],10:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],11:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:20,2:21,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=u.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===f.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=u.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===u.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,u=c.document;t(2);var f=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},p=e.exports={offset:i(),origin:f,features:{}};u.addEventListener?(u.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(u.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:20,2:11,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],20:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],21:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],22:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,u;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){f([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return u=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,u],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,u(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,u="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,u?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){f([o,e,n,r])}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){f([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function f(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:21,ee:"QJf3ax"}]},{},["G9z0Bl",4,9]);</script><title>
+	
+	Show Collection  
+
+</title><link rel="stylesheet" type="text/css" href="./bru_files/1.2"><script type="text/javascript" src="./bru_files/1"></script><link href="./bru_files/custom.css" rel="stylesheet" type="text/css">
+ <script type="text/javascript">// <![CDATA[
+     $(document).ready(function () {
+         var auth = "FE0840C53FCAC190AB569225E940197FBE0C07350D376B0F6214784E82BA2410AE6CD82A34125282C56446FFB5CDED15B73F5B4D93B6F61992FF18AC549288D7D8CE694E3C04DA19FE449A151E316A7C1BF431E3371B42838DFE81E07B818D00708A25EBF89461CD3890CF1A304381F05D3C9CDBFB8C6FDA2B39B3B5F2184C220FDF1CF7FF5B028281226D8BE5231C78";
+         $('#fileInput').uploadify({
+             'uploader': '/content/flash/uploadify.swf',
+             'script': '/images/uploadify',
+             'scriptData': { token: auth, id:1469  },
+             'cancelImg': '/content/css/img/cancel.png',
+             'auto': true,
+             'multi': true,
+             'folder': '/uploads',
+             'scriptAccess': 'always',
+             'onAllComplete': function (event, data) {
+                window.location = window.location + '?uploadcomplete=true'
+             }
+         });
+         function imgError(image) {
+            image.onerror = "";
+            image.src = "http://placehold.it/120x90?text=missing+image";
+            image.width = "120";
+            var missingimg = image.title;
+            $('.missingimg').append(missingimg+"<br>");
+            return true;
+            
+        }
+        $("img").error(function () {
+            var missingimg = this.title;
+            $(this).unbind("error").attr("src", "http://placehold.it/120x90?text=missing+image");
+            $('.missingimg').append(missingimg+"<br>");
+        });
+
+     });
+    // ]]>
+  </script>
+
+    <script language="javascript" type="text/javascript">
+    <!--
+        $(function () {
+
+            if (!(document.location.hostname == "localhost") && !(document.location.hostname == "iprevueapp.microdinc.com")) {
+                //if (window.location.protocol != "https:") {
+                    //window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+                    // alert("https:" + window.location.href.substring(window.location.protocol.length));
+
+                //}
+            }
+
+            $.ajax({ url: '/subscriptions/HasSubscriptions/1469',
+                success: function (data) {
+                    if (data == 'true') {
+                        $('li.subscriptions').show();
+                    } else {
+                        $('li.subscriptions').hide();
+                    }
+                },
+                statusCode: {
+                    404: function (content) { alert('cannot find resource'); },
+                    505: function (content) { alert('internal server error'); }
+                },
+                error: function (req, status, errorObj) {
+                    // handle status === "timeout"
+                    // handle other errors
+                }
+            });
+
+            $.ajax({ url: '/quickbooks/integration/1469',
+                success: function (data) {
+                    if (data == 'true') {
+                        $('li.quickbooks').show();
+                    } else {
+                        $('li.quickbooks').hide();
+                    }
+
+                },
+                statusCode: {
+                    404: function (content) { alert('cannot find resource'); },
+                    505: function (content) { alert('internal server error'); }
+                },
+                error: function (req, status, errorObj) {
+                    // handle status === "timeout"
+                    // handle other errors
+                }
+            });
+
+
+            $.ajax({ url: '/webhooks/FailCount/1469',
+                success: function (data) {
+                    if (data > 0) {
+                        $('.failcount').text('(' + data + ')');
+                    }
+
+                },
+                statusCode: {
+                    404: function (content) { alert('cannot find resource'); },
+                    505: function (content) { alert('internal server error'); }
+                },
+                error: function (req, status, errorObj) {
+                    // handle status === "timeout"
+                    // handle other errors
+                }
+            });
+
+            $.ajax({ url: '/webhooks/HasWebHooks/1469',
+                success: function (data) {
+                    if (data == 'true') {
+                        $('li.webhooks').show();
+                    } else {
+                        $('li.webhooks').hide();
+                    }
+                },
+                statusCode: {
+                    404: function (content) { alert('cannot find resource'); },
+                    505: function (content) { alert('internal server error'); }
+                },
+                error: function (req, status, errorObj) {
+                    // handle status === "timeout"
+                    // handle other errors
+                }
+            });
+
+        });
+    //-->
+    </script>
+<style type="text/css" media="screen">#fileInputUploader {visibility:hidden}</style></head>
+<body cz-shortcut-listen="true">
+    <div class="wrapper">
+        <div id="header">
+		<h1 style="width:200px; background:url(&#39;https://images.repzio.com/reseller/1/logo.png?width=200&#39;) no-repeat 0 0;"><a href="https://webmanager.repzio.com/">&nbsp;</a></h1>
+        <div id="info"></div>
+		
+		<div id="info">
+        
+			<h4>Welcome Omni Foodservice</h4>
+			<p>
+            
+        <a rel="facebox" href="https://webmanager.repzio.com/Home/Currentmanufacturers/">Select Manufacturer Line</a><br>
+        
+				<a href="https://webmanager.repzio.com/home/logout/">Logout</a><br>
+			</p>
+			
+			<img src="./bru_files/logo1469_sm.jpg" alt="avatar">
+        
+		</div> <!-- #info -->
+				
+	</div> <!-- #header -->	
+	
+		<div id="nav">	
+
+			<ul class="mega-container mega-grey">
+	
+				<li class="mega">
+					<a href="https://webmanager.repzio.com/home/manage" class="mega-link">Dashboard</a>	
+				</li>
+                
+		        <li class="mega">
+					<a href="https://webmanager.repzio.com/orders" class="mega-link">Orders</a>	
+                     <div class="mega-content mega-menu ">								
+						<ul>
+                            <li><a href="https://webmanager.repzio.com/orders">View Orders</a></li>
+                            <li><a href="https://webmanager.repzio.com/orders/create">Create New Orders</a></li>
+                             <li><a href="https://webmanager.repzio.com/export">Export Orders</a></li>
+                        </ul>
+                      </div>
+				</li>
+                
+                 <li class="mega">
+					<a href="https://webmanager.repzio.com/customers/editor" class="mega-link hasSub">Customers</a>	
+                    <div class="mega-content mega-menu ">							
+						<ul>
+                            <li><a href="https://webmanager.repzio.com/customers/editor">Edit Customers</a></li>
+                            <li><a href="https://webmanager.repzio.com/items/shiptos">Ship To's</a></li>
+                            <li><a href="https://webmanager.repzio.com/customers/Create/">Add Customer</a></li>
+                            <li><a href="https://webmanager.repzio.com/customers/mergecustomers">Merge Customers</a></li>
+                            
+						</ul>
+					</div>
+				</li>
+                
+                 <li class="mega">
+					<a href="https://webmanager.repzio.com/items" class="mega-link hasSub">Products</a>	
+                    <div class="mega-content mega-menu ">							
+						<ul>
+                            <li>
+                                <a href="https://webmanager.repzio.com/items" class="hasSub">Browse</a>
+                                
+<ul>
+    
+            <li><a href="https://webmanager.repzio.com/items/showcollection/283116">Cleaning Tools</a>
+            <ul><li><a href="./bru_files/bru.html">Brushes</a></li><li><a href="https://webmanager.repzio.com/items/showcollection/283124">Buckets</a></li><li><a href="https://webmanager.repzio.com/items/showcollection/283122">Dust Pans</a></li><li><a href="https://webmanager.repzio.com/items/showcollection/283140">Dusters</a></li><li><a href="https://webmanager.repzio.com/items/showcollection/283117">Mops</a></li><li><a href="https://webmanager.repzio.com/items/showcollection/283142">Plungers</a></li><li><a href="https://webmanager.repzio.com/items/showcollection/283141">Scourer</a></li><li><a href="https://webmanager.repzio.com/items/showcollection/283125">Sponges</a></li></ul>
+            </li>
+    
+            <li><a href="https://webmanager.repzio.com/items/showcollection/283126">Cookware</a>
+            <ul><li><a href="https://webmanager.repzio.com/items/showcollection/283127">Fry Pans</a></li><li><a href="https://webmanager.repzio.com/items/showcollection/283151">Pots</a></li><li><a href="https://webmanager.repzio.com/items/showcollection/283144">Saucepans</a></li></ul>
+            </li>
+    
+            <li><a href="https://webmanager.repzio.com/items/showcollection/283118">Flatware</a>
+            <ul><li><a href="https://webmanager.repzio.com/items/showcollection/283119">Forks</a></li><li><a href="https://webmanager.repzio.com/items/showcollection/283121">Knives</a></li><li><a href="https://webmanager.repzio.com/items/showcollection/283120">Spoons</a></li><li><a href="https://webmanager.repzio.com/items/showcollection/283157">Steak Knives</a></li></ul>
+            </li>
+    
+            <li><a href="https://webmanager.repzio.com/items/showcollection/283155">Jan-San</a>
+            <ul><li><a href="https://webmanager.repzio.com/items/showcollection/283156">Signage</a></li></ul>
+            </li>
+    
+            <li><a href="https://webmanager.repzio.com/items/showcollection/283114">Smallwares</a>
+            <ul><li><a href="https://webmanager.repzio.com/items/showcollection/283139">Baking Mat</a></li><li><a href="https://webmanager.repzio.com/items/showcollection/283128">Colanders</a></li><li><a href="https://webmanager.repzio.com/items/showcollection/283137">Dishers</a></li><li><a href="https://webmanager.repzio.com/items/showcollection/283134">Dredger</a></li><li><a href="https://webmanager.repzio.com/items/showcollection/283129">French Fries</a></li><li><a href="https://webmanager.repzio.com/items/showcollection/283146">Glass Rimmer</a></li><li><a href="https://webmanager.repzio.com/items/showcollection/283149">Ladles</a></li><li><a href="https://webmanager.repzio.com/items/showcollection/283148">Measuring Spoons</a></li><li><a href="https://webmanager.repzio.com/items/showcollection/283145">Scrapers</a></li><li><a href="https://webmanager.repzio.com/items/showcollection/283152">Skimmer</a></li><li><a href="https://webmanager.repzio.com/items/showcollection/283135">Spatulas</a></li><li><a href="https://webmanager.repzio.com/items/showcollection/283136">Strainers</a></li><li><a href="https://webmanager.repzio.com/items/showcollection/283153">Thermometers</a></li><li><a href="https://webmanager.repzio.com/items/showcollection/283115">Tongs</a></li><li><a href="https://webmanager.repzio.com/items/showcollection/283150">Whips</a></li></ul>
+            </li>
+    
+            <li><a href="https://webmanager.repzio.com/items/showcollection/283130">Tableware Service</a>
+            <ul><li><a href="https://webmanager.repzio.com/items/showcollection/283147">Napkin Dispenser</a></li><li><a href="https://webmanager.repzio.com/items/showcollection/283154">Pourers</a></li><li><a href="https://webmanager.repzio.com/items/showcollection/283143">Shakers</a></li><li><a href="https://webmanager.repzio.com/items/showcollection/283131">Trays</a></li></ul>
+            </li>
+    
+            <li><a href="https://webmanager.repzio.com/items/showcollection/283132">Textiles</a>
+            <ul><li><a href="https://webmanager.repzio.com/items/showcollection/283133">Aprons</a></li><li><a href="https://webmanager.repzio.com/items/showcollection/283138">Oven Mitts</a></li><li><a href="https://webmanager.repzio.com/items/showcollection/283158">Table Cloth</a></li></ul>
+            </li>
+    
+</ul>
+
+
+                                </li>	
+							    <li><a href="https://webmanager.repzio.com/items/editor">Products Quick Edit</a></li>
+                                <li><a href="https://webmanager.repzio.com/collections">Manage Categories</a></li>
+                                <li><a href="https://webmanager.repzio.com/collections/manage">Arrange Categories</a></li>
+                                <li><a href="https://webmanager.repzio.com/tag/managetags">Manage Tags</a></li>	
+                                <li><a href="https://webmanager.repzio.com/labels">Generate Labels</a></li>	
+                                <li><a href="https://webmanager.repzio.com/items/showcollection/283123#" class="hasSub">Advanced</a>
+                                <ul>
+                                    <li><a href="https://webmanager.repzio.com/items/childproducts">Child Products</a></li>
+                                    <li><a href="https://webmanager.repzio.com/items/relatedproducts">Related Products</a></li>	
+                                    <li><a href="https://webmanager.repzio.com/items/volumepricing">Volume Pricing</a></li>	
+                                    <li><a href="https://webmanager.repzio.com/items/modifierlists">Modifier Lists</a></li>
+                                    <li><a href="https://webmanager.repzio.com/items/modifierlistitems">Modifier List Items</a></li>
+                                    <li><a href="https://webmanager.repzio.com/items/productmodifiers">Product Modifiers</a></li>
+                                    <li><a href="https://webmanager.repzio.com/items/tags">Quick Edit Tags</a></li>
+						            <li><a href="https://webmanager.repzio.com/items/customerspecialpricing">Customer Special Pricing</a></li>
+                                </ul>
+                                </li>
+                        </ul>
+					</div>
+				    </li>
+                
+                <li class="mega">				
+					<a href="https://webmanager.repzio.com/flipbook" class="mega-link">Flipbooks</a>		
+				</li>	
+                
+                <li class="mega">
+					<a href="https://webmanager.repzio.com/reports" class="mega-link hasSub">Reports</a>
+					<div class="mega-content mega-menu ">						
+						<ul>
+                            <li><a href="https://webmanager.repzio.com/reports/">Sales</a></li>
+                            <li><a href="https://webmanager.repzio.com/reports/RepRankingPage">Sales Rep Ranking</a></li>
+                            <li><a href="https://webmanager.repzio.com/reports/SalesByCategoryPage">Sales By Category</a></li>
+                            <li><a href="https://webmanager.repzio.com/reports/SalesByReportCategoryPage">Sales By Report Category</a></li>
+                            <li><a href="https://webmanager.repzio.com/reports/SalesByCategoryBreakdown">Sales By Category w/ Breakdown</a></li>
+                            <li><a href="https://webmanager.repzio.com/reports/SalesByProductPage">Sales By Product</a></li>
+                            <li><a href="https://webmanager.repzio.com/reports/SalesByProduct_Category_Page">Sales By Product By Category</a></li>
+                            <li><a href="https://webmanager.repzio.com/reports/SalesByCustomerPage">Sales By Customer</a></li>
+                            <li><a href="https://webmanager.repzio.com/reports/salesrepsummary">Sales Summary</a></li>
+                            <li><a href="https://webmanager.repzio.com/reports/InStock">Products In Stock</a></li>
+                            <li><a href="https://webmanager.repzio.com/reports/CustomerInventoryReport">Customer Inventory Report</a></li>
+                            
+                           
+
+						</ul>
+					</div>						
+				</li>
+                
+				<li class="mega">				
+					<a href="https://webmanager.repzio.com/items/showcollection/283123#" class="mega-link hasSub">Import</a>	
+					<div class="mega-content mega-menu ">						
+						<ul>
+                        <li><a href="https://webmanager.repzio.com/data">Upload Data Sheets</a></li>
+                        <li><a href="https://webmanager.repzio.com/images/UploadImages">Upload Images</a></li>
+                         <li><a href="https://webmanager.repzio.com/export">Export Data</a></li>
+                         <li><a href="http://webmanager.repzio.com/content/RepZioDataTemplates2013.zip" target="_blank">Download Data Templates</a></li>
+						</ul>
+					</div>				
+				</li>
+                
+                <li class="mega">
+					<a href="https://webmanager.repzio.com/lifestyle" class="mega-link hasSub">Settings</a>
+                    <div class="mega-content mega-menu ">						
+						<ul>
+                            <li><a href="https://webmanager.repzio.com/shopzio">ShopZio</a></li>      
+                            <li><a href="https://webmanager.repzio.com/lifestyle">Landing Page</a></li>                          
+                            <li><a href="https://webmanager.repzio.com/appsettings/basic">Basic Settings</a></li>
+                            <li><a href="https://webmanager.repzio.com/appsettings/templates">Templates</a></li>
+                            <li><a href="https://webmanager.repzio.com/appsettings/inventory">Inventory Settings</a></li>
+                            <li><a href="https://webmanager.repzio.com/appsettings/validation">Data Validtion</a></li>
+						</ul>
+					</div>					
+				</li>
+                
+				<li class="mega">
+					<a href="https://webmanager.repzio.com/salesreps" class="mega-link hasSub">Sales Reps</a>
+                    <div class="mega-content mega-menu ">						
+						<ul>
+                        <li><a href="https://webmanager.repzio.com/salesreps">View/Edit Sales Reps</a></li>
+                        <li><a href="https://webmanager.repzio.com/salesreps/setmarketname">Set Market Name</a></li>
+                         <li><a href="https://webmanager.repzio.com/salesreps/setshowroommode">Set Showroom Mode</a></li>
+						</ul>
+					</div>					
+				</li>
+                
+
+                <li class="mega">
+					<a href="https://webmanager.repzio.com/home/tutorials" class="mega-link">Tutorials</a>					
+				</li>
+                
+                 <li class="mega quickbooks hide" style="display: none;">
+                    <a href="https://webmanager.repzio.com/quickbooks" class="mega-link">QuickBooks</a>
+                     <div class="mega-content mega-menu ">						
+						<ul>
+                        <li><a href="https://webmanager.repzio.com/quickbooks">Integration Settings</a></li>
+                        <li><a href="https://webmanager.repzio.com/quickbooks/products">Products</a></li>
+                         <li><a href="https://webmanager.repzio.com/quickbooks/customers">Customers</a></li>
+						</ul>
+					</div>
+                </li>
+
+                
+                <li class="mega webhooks hide" style="display: none;">
+                    <a href="https://webmanager.repzio.com/webhooks" class="mega-link">Webhooks <span class="failcount"></span></a>
+                </li>
+                
+                 <li class="mega subscriptions hide" style="display: none;">
+                    <a href="https://webmanager.repzio.com/subscriptions" class="mega-link">Subscriptions </a>
+                </li>
+                
+                <li class="mega">				
+					<a href="https://webmanager.repzio.com/data/pushlive" id="pushLive" class="mega-link" style="">Push Data Live</a>		
+				</li>							
+				
+			</ul>
+           
+            <div style="color:#fff; margin-top:10px;float:right; padding-right:15px;"></div>
+		</div> <!-- #nav -->
+        
+        
+        <div id="content" class="xfluid">
+        
+<div class="portlet x9">
+<div class="portlet-header"><h4 class="thin">Brushes (7)</h4></div>
+    <div class="portlet-content">
+   <a href="https://webmanager.repzio.com/items">Collections / Categories</a> &gt; Brushes
+   <ul class="gallery">
+    
+       <li><img src="./bru_files/32-1740-11_lg.jpg" title="32-1740-11">
+            <div class="actions">	
+            
+				<a class="btn btn-orange btn-small" href="https://webmanager.repzio.com/items/showitem/21092406?CollectionName=Brushes&categoryID=283123">32-1740-11</a>
+                <a class="btn btn-red btn-icon btn-cross" rel="facebox" href="https://webmanager.repzio.com/items/DeleteItemFromCategory/21092406?ItemID=32-1740-11&categoryID=283123"><span></span>from Category</a>
+			</div>
+            32-1740-11
+       </li>
+    
+       <li><img src="./bru_files/20-0124-13_lg.jpg" title="20-0124-13">
+            <div class="actions">	
+            
+				<a class="btn btn-orange btn-small" href="https://webmanager.repzio.com/items/showitem/21092403?CollectionName=Brushes&categoryID=283123">20-0124-13</a>
+                <a class="btn btn-red btn-icon btn-cross" rel="facebox" href="https://webmanager.repzio.com/items/DeleteItemFromCategory/21092403?ItemID=20-0124-13&categoryID=283123"><span></span>from Category</a>
+			</div>
+            20-0124-13
+       </li>
+    
+       <li><img src="./bru_files/30-1158-44_lg.jpg" title="30-1158-44">
+            <div class="actions">	
+            
+				<a class="btn btn-orange btn-small" href="https://webmanager.repzio.com/items/showitem/21092408?CollectionName=Brushes&categoryID=283123">30-1158-44</a>
+                <a class="btn btn-red btn-icon btn-cross" rel="facebox" href="https://webmanager.repzio.com/items/DeleteItemFromCategory/21092408?ItemID=30-1158-44&categoryID=283123"><span></span>from Category</a>
+			</div>
+            30-1158-44
+       </li>
+    
+       <li><img src="./bru_files/20-0125-11_lg.jpg" title="20-0125-11">
+            <div class="actions">	
+            
+				<a class="btn btn-orange btn-small" href="https://webmanager.repzio.com/items/showitem/21092416?CollectionName=Brushes&categoryID=283123">20-0125-11</a>
+                <a class="btn btn-red btn-icon btn-cross" rel="facebox" href="https://webmanager.repzio.com/items/DeleteItemFromCategory/21092416?ItemID=20-0125-11&categoryID=283123"><span></span>from Category</a>
+			</div>
+            20-0125-11
+       </li>
+    
+       <li><img src="./bru_files/20-0225-11_lg.jpg" title="20-0225-11">
+            <div class="actions">	
+            
+				<a class="btn btn-orange btn-small" href="https://webmanager.repzio.com/items/showitem/21092418?CollectionName=Brushes&categoryID=283123">20-0225-11</a>
+                <a class="btn btn-red btn-icon btn-cross" rel="facebox" href="https://webmanager.repzio.com/items/DeleteItemFromCategory/21092418?ItemID=20-0225-11&categoryID=283123"><span></span>from Category</a>
+			</div>
+            20-0225-11
+       </li>
+    
+       <li><img src="./bru_files/20-0325-11_lg.jpg" title="20-0325-11">
+            <div class="actions">	
+            
+				<a class="btn btn-orange btn-small" href="https://webmanager.repzio.com/items/showitem/21092419?CollectionName=Brushes&categoryID=283123">20-0325-11</a>
+                <a class="btn btn-red btn-icon btn-cross" rel="facebox" href="https://webmanager.repzio.com/items/DeleteItemFromCategory/21092419?ItemID=20-0325-11&categoryID=283123"><span></span>from Category</a>
+			</div>
+            20-0325-11
+       </li>
+    
+       <li><img src="./bru_files/20-0543-11_lg.jpg" title="20-0543-11">
+            <div class="actions">	
+            
+				<a class="btn btn-orange btn-small" href="https://webmanager.repzio.com/items/showitem/21092429?CollectionName=Brushes&categoryID=283123">20-0543-11</a>
+                <a class="btn btn-red btn-icon btn-cross" rel="facebox" href="https://webmanager.repzio.com/items/DeleteItemFromCategory/21092429?ItemID=20-0543-11&categoryID=283123"><span></span>from Category</a>
+			</div>
+            20-0543-11
+       </li>
+    
+    </ul>
+     </div>
+</div>
+
+<div class="portlet x3">
+<div class="portlet-header"> <h4>Upload Missing Images</h4></div>
+    <div class="portlet-content">
+    <p>
+        Click the <strong>Browse</strong> button below to select your files to upload:
+        </p>
+        <p>
+        <input id="fileInput" name="fileInput" type="file" width="110" style="display: none;" height="30"><object type="application/x-shockwave-flash" data="https://webmanager.repzio.com/content/flash/uploadify.swf" width="110" height="30" id="fileInputUploader" style="visibility: visible;"><param name="quality" value="high"><param name="wmode" value="opaque"><param name="allowScriptAccess" value="always"><param name="flashvars" value="uploadifyID=fileInput&amp;pagepath=/items/showcollection/&amp;script=/images/uploadify&amp;folder=/uploads&amp;scriptData=token%3DFE0840C53FCAC190AB569225E940197FBE0C07350D376B0F6214784E82BA2410AE6CD82A34125282C56446FFB5CDED15B73F5B4D93B6F61992FF18AC549288D7D8CE694E3C04DA19FE449A151E316A7C1BF431E3371B42838DFE81E07B818D00708A25EBF89461CD3890CF1A304381F05D3C9CDBFB8C6FDA2B39B3B5F2184C220FDF1CF7FF5B028281226D8BE5231C78%26id%3D1469&amp;width=110&amp;height=30&amp;wmode=opaque&amp;method=POST&amp;queueSizeLimit=999&amp;simUploadLimit=1&amp;multi=true&amp;auto=true&amp;fileDataName=Filedata"></object><div id="fileInputQueue" class="uploadifyQueue"></div>
+        </p>
+
+        <h4>Missing Images:</h4>
+        <ul class="missingimg"></ul>
+        
+    </div>
+</div>
+
+        </div> <!-- #content -->
+
+        <div id="footer">
+		    <p>Copyright © 2013 RepZio</p>
+	    </div> <!-- #footer -->
+    </div>
+<script type="text/javascript" src="./bru_files/zenbox.js"></script>
+<style type="text/css" media="screen, projection">
+  @import url(//assets.zendesk.com/external/zenbox/v2.5/zenbox.css);
+</style>
+<script type="text/javascript">
+
+var mfr = $('#info h4').html();
+mfr=mfr.replace('Welcome','')+': ';
+var contact_email=$('#contactInfo a').html();
+
+    if (typeof (Zenbox) !== "undefined") {
+        Zenbox.init({
+            dropboxID: "20092686",
+            url: "https://repzio.zendesk.com",
+            tabID: "Support",
+            tabColor: "black",
+            tabPosition: "Left",
+			requester_name:mfr,
+			requester_email:contact_email
+			
+        });
+    }
+	
+</script><div id="zenbox_tab" href="#" title="Support" class="ZenboxTabLeft" classname="ZenboxTabLeft" style="display: block; left: -50px; background-color: black;"><div id="feedback_tab_text">Support</div></div><div id="zenbox_overlay" style="display: none;"><div id="zenbox_container">  <div class="zenbox_header"><img id="zenbox_close" src="./bru_files/close_big.png"></div>  <iframe id="zenbox_body" frameborder="0" scrolling="auto" allowtransparency="true" src="./bru_files/loading.html"></iframe></div><div id="zenbox_scrim">&nbsp;</div></div>
+<script type="text/javascript" charset="utf-8">
+    $(function () {
+        slate.init();
+        slate.portlet.init();
+
+        $.ajaxSetup({
+            cache: false
+        });
+
+    });
+    </script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+  m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-26264152-13', 'repzio.com');
+        ga('send', 'pageview');
+
+</script>
+
+    <div id="facebox" style="display:none;">       <div class="popup">         <table>           <tbody id="facebox-tbody">             <tr>               <td class="tl"></td><td class="b"></td><td class="tr"></td>             </tr>             <tr>               <td class="b"></td>               <td class="body">                 <div class="content">                 </div>                 <div class="footer">                   <a href="https://webmanager.repzio.com/items/showcollection/283123#" class="close">                     <img src="./bru_files/closelabel.gif" title="close" class="close_image">                   </a>                 </div>               </td>               <td class="b"></td>             </tr>             <tr>               <td class="bl"></td><td class="b"></td><td class="br"></td>             </tr>           </tbody>         </table>       </div>     </div></body></html>

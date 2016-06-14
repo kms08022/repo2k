@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+
+<head>
+
+	<title>Javascript Game</title>	
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="stylez.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+	<div id="container">
+		<div id="audioBox">
+	        <audio autoplay loop controls>
+				<source src="game-music.mp3" type="audio/mpeg">
+			</audio>
+	    </div>
+		<div id="header">
+			<h2>Reaction Game</h2>
+			<p>Copyright Salim & Rob 2015. All rights reserved. <p>
+		</div>
+		
+		<div style="clear: both"></div>
+		
+		<div id="gameTime">
+			<p>Time: 0s</p>
+		</div>	
+		
+		<div id="bestTime">
+			<p>Your best time is 0s</p>
+		</div>			
+
+		<div id="gameHits">
+			<p>Clicks: 0</p>
+		</div>	
+		
+		<div style="clear: both"></div>
+		
+		<div id="menuInstructions">
+			<p><a href="instructions.html">Game Instructions</a></p>
+		</div>	
+	
+		<div id="menuExit">
+			<p><a href="exitGame.html">Exit Game</a></p>
+		</div>			
+		
+		<div id="gameObject"></div>
+		
+
+		<script type="text/javascript">
+		
+			var clickedTime; 
+			var createdTime; 
+			var reactionTime; 
+			var bestTime; 
+			var newTime;
+			hits=0;
+			
+			function getRandomBg() {
+				var bg = 'image';
+                bg += Math.floor(Math.random()*8) + 1;
+				bg += '.png';	
+				return bg;
+			}	 		
+		
+		    function  makeShape() {
+				createdTime=Date.now();
+			
+				var time=Math.random();
+				time=time*3000;
+		        
+				var top = Math.random();
+				top=top*200;
+				var left = Math.random();
+				left=left*600;				
+				
+				setTimeout(function() { 
+					document.getElementById("gameObject").style.backgroundImage="url("+getRandomBg()+")"; 					
+					document.getElementById("gameObject").style.display="block";
+					document.getElementById("gameObject").style.top=top+"px";					
+					document.getElementById("gameObject").style.left=left+"px";						
+				}, time);				
+            }
+			
+			document.getElementById("gameObject").onclick=function() {
+			
+				hits ++;
+				clickedTime=Date.now();
+				reactionTime=(clickedTime-createdTime)/1000;
+						
+				if (hits==1) {
+					bestTime=reactionTime;	
+    			} else { 
+				    newTime=reactionTime;
+				    if (newTime>=bestTime) {
+						bestTime=bestTime;
+				    } else {
+				        bestTime=newTime;
+       			    }					
+ 				}	
+	
+				this.style.display="none";
+				document.getElementById("gameTime").innerHTML="<p>Time: "+reactionTime+"s</p>";
+                document.getElementById("bestTime").innerHTML="<p>Your best time is "+bestTime+"s</p>";												
+				document.getElementById("gameHits").innerHTML="<p>Clicks: "+hits+"</p>";				
+      
+				makeShape();
+				
+			}	
+			
+			makeShape();
+
+
+		</script>
+	
+		
+		
+		<!--
+		<div id="gameMenu"> 
+			<ul>
+				<li><a href="index.html">Refresh The Game</a></li>		
+				<li><a href="#" onclick="instFunction()">Game Instructions</a></li>	
+				<li><a href="#">Exit The Game</a></li>					
+			</ul>
+		</div>	 
+
+		<div id="playerName">
+		    <p>Hi, <input type="text" id="pname" placeholder="Input Your Name please!"> <button id="nameButton">Submit</button></p>		
+			<script type="text/javascript">
+				document.getElementById("nameButton").onclick=function() {
+				document.getElementById("playerName").innerHTML="<p style='color: yellow;'>Hi " + document.getElementById("pname").value +"!, Enjoy the Game:) </p>" ; 
+				}			
+			</script>
+		</div> -->
+	
+		
+	</div>
+	<!-- <script type="text/javascript" src="gamejs.css"></script> -->
+
+</body>
+</html>

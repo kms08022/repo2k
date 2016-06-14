@@ -1,0 +1,104 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Kazi Shahjahan - Learning Portfolio</title>
+
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div class="container">
+
+  	<header class="site-title">
+    	<!--<img src="images/logo.png" width="86" height="83" alt="web courses logo" />-->
+        <p><strong>Kazi Shahjahan</strong></p>
+        <p>online space</p>
+    </header>
+    
+    <nav>
+    	<ul>
+        	<li><a href="exampleindex.html">Home</a></li>
+       	  	<li><a href="nabout.html">About</a></li>
+       	  	<li><a href="nservices.html">Services</a></li>
+       	  	<li><a href="nportfolio.html">Portfolio</a></li>
+        	<li><a href="ncontact.html">Contact</a></li>
+            <li><a href="https://kshinez.wordpress.com/">Blog</a></li>
+   	    </ul>
+    </nav>
+    
+    <img src="images/banner-hom.jpg" width="960" height="366" alt="Homepage banner"/> 
+    
+    <article class="main-content">    	
+    	<h1 class="center">Developer/Designer</h1>
+    	<p class="center">I help with the building and maintenance of websites, apps and services that are simple and easy to use.<br /> 
+        If you need one built, contact me: </p>
+      	<a href="nabout.html" class="cta">Learn about me =) </a>
+        
+        <p class="center"> In the meantime, play the following guessing game:</p>
+            <div class="center">
+            <p id="arrayString" class="center">How many fingers am I holding?</p>
+                <input id="p" class="center"/>
+                <button id="itis">Submit</button>
+            </div>
+         
+        
+        <script type"text/javascript">
+		
+	
+			document.getElementById("itis").onclick=function()
+			{
+				var x = Math.random();
+				
+				x = 6 * x;
+				
+				x = Math.floor(x);
+				
+				if(x==document.getElementById("p").value)
+				{
+					alert("That is correct!");	
+				}
+				
+				else
+					{
+						alert("That is wrong, I was holding up " + x);
+					}
+				
+			}
+			
+			</script>
+            <br>
+            
+        	<img src="images/portfolio.jpg" width="895" height="516" alt="portfolio" />
+    </article>
+    
+    <footer> 
+    
+        <!-- Twitter 
+    <a href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+    </a>  -->
+    
+    	     <a href="https://www.linkedin.com/pub/kazi-shahjahan/34/b17/113?mini=true&amp;url=https://simplesharebuttons.com" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
+    </a>
+    
+        <!-- Email -->
+    <a href="mailto:kazi.shahjahan1@gmail.com?Subject=Hi&amp; https://simplesharebuttons.com">
+        <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
+    </a>
+    
+        <!-- github -->
+    <a href="https://github.com/kms08022"; https://simplesharebuttons.com" >
+        <img src="images/GitHub-Mark-64px.png" alt="github" width="64" height="64" />
+    </a>
+       <!-- <a href="http://plus.google.com/u/0/118160428335796246971" target="_blank"><img src="images/icon-google-plus.png" width="64" height="64" alt="Google Plus" /></a>-->
+        <p>&copy; 2015  - Kazi Shahjahan</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
