@@ -1,7 +1,7 @@
 public class reverse
 {
 	public static void main(String[] args) {
-		
+
 		Scanner sc = new Scanner(System.in);
 
 			String [] s = sc.nextLine();
@@ -16,6 +16,7 @@ public class reverse
 			{
 				sysout("app");
 				more++; //i added this stuff too
+				//this was the best part
 			}
 
 	}
