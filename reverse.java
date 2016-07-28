@@ -15,7 +15,7 @@ public class reverse
 			for(int i = 0; i < A.length; i++)
 			{
 				sysout("app");
-				more++;
+				more++; //i added this stuff too
 			}
 
 	}
